@@ -1,0 +1,7 @@
+model,train_data,roc_auc,pr_auc,precision@0.5,recall@0.5,f1@0.5,false_alarms@0.5,tuned_threshold,precision,recall,f1,frauds_caught,frauds_missed,false_alarms
+Dummy,undersampled,0.5,0.0017,0.0017,1.0,0.0034,56864,0.5,0.0017,1.0,0.0034,98,0,56864
+Logistic Regression,undersampled,0.97,0.4796,0.0348,0.9082,0.0671,2465,1.0,0.4929,0.7041,0.5798,69,29,71
+Naive Bayes,undersampled,0.9535,0.0433,0.0293,0.8571,0.0566,2784,1.0,0.0483,0.8163,0.0913,80,18,1575
+Random Forest,undersampled,0.9731,0.6542,0.0855,0.8878,0.1559,931,0.8204,0.7615,0.8469,0.8019,83,15,26
+XGBoost,undersampled,0.9684,0.6381,0.0411,0.9184,0.0787,2098,0.9985,0.5692,0.7551,0.6491,74,24,56
+"XGBoost (full data, weighted)","full, class-weighted",0.9755,0.8771,0.8925,0.8469,0.8691,10,0.9185,0.9195,0.8163,0.8649,80,18,7
